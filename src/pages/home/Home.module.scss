@@ -1,0 +1,138 @@
+.main {
+  @apply flex min-h-screen items-center justify-center bg-gray-200 py-8 sm:py-16;
+
+  .container {
+    @apply grid w-[90vw] grid-cols-1 gap-6 md:grid-cols-4 xl:w-[66rem];
+
+    .card {
+      @apply rounded-lg p-4 sm:p-5;
+
+      .subHeading {
+        @apply font-medium;
+
+        &.small {
+          @apply text-2xl leading-6 tracking-tighter lg:text-3xl lg:leading-7;
+        }
+
+        &.big {
+          @apply text-3xl leading-6 lg:text-4xl lg:leading-8;
+        }
+      }
+
+      &.card1 {
+        @apply bg-purple-500 py-8 sm:py-10 md:col-span-2 md:col-start-2;
+
+        h1 {
+          @apply mx-auto w-[19rem] text-center text-5xl font-medium text-white sm:w-auto lg:text-6xl;
+
+          .active {
+            @apply text-yellow-500;
+          }
+          .italic_ {
+            @apply italic;
+          }
+        }
+
+        img {
+          @apply mx-auto mt-4 w-40;
+        }
+
+        .desc {
+          @apply mt-1 block text-center text-yellow-100;
+        }
+      }
+
+      &.card2 {
+        @apply relative flex flex-col overflow-hidden bg-white md:col-start-2 md:row-start-2 md:flex-row md:items-end;
+
+        img {
+          @apply left-5 top-[1.5625rem] mx-auto w-[90%] origin-left sm:w-4/6 md:absolute md:w-auto md:scale-125;
+        }
+
+        h2 {
+          @apply mt-4 md:w-48;
+        }
+      }
+
+      &.card3 {
+        @apply relative h-56 overflow-hidden bg-yellow-500 md:col-start-3 md:row-start-2;
+
+        img {
+          @apply absolute left-5 mx-auto mt-4 w-4/6 md:left-0 md:right-0 md:w-4/5;
+        }
+      }
+
+      &.card4 {
+        @apply relative row-span-1 flex flex-col justify-between gap-y-6 overflow-hidden bg-purple-100 sm:gap-y-4 md:row-span-2 md:py-0;
+
+        img {
+          @apply bottom-0 left-20 top-0 my-auto sm:mx-auto sm:w-64 md:absolute md:w-auto md:scale-[1.20];
+        }
+
+        h2 {
+          @apply mx-auto flex items-end sm:mx-0 md:min-h-24;
+        }
+
+        span {
+          @apply mx-auto w-64 text-center leading-5 sm:w-auto sm:text-start md:min-h-24;
+        }
+      }
+
+      &.card5 {
+        @apply col-span-1 flex flex-col items-center gap-x-2 gap-y-6 bg-purple-500 text-white sm:gap-y-4 md:col-span-2 md:col-start-3 md:row-start-3 md:flex-row;
+
+        img {
+          @apply w-44 sm:w-44 lg:w-52;
+        }
+
+        h2 {
+          @apply w-64 text-center sm:w-auto sm:text-start;
+        }
+      }
+
+      &.card6 {
+        @apply col-start-1 bg-white md:col-start-2 md:row-start-3;
+
+        .big {
+          @apply mb-2 block text-5xl font-medium lg:text-6xl;
+        }
+
+        img {
+          @apply mt-6 w-40;
+        }
+      }
+
+      &.card7 {
+        @apply flex flex-col justify-center bg-yellow-100 md:h-1/2;
+
+        h2 {
+          @apply md:w-40;
+
+          .active {
+            @apply italic text-purple-500;
+          }
+        }
+
+        img {
+          @apply mx-auto mt-6 w-40;
+        }
+      }
+
+      &.card8 {
+        @apply bg-yellow-500 md:h-1/2;
+
+        img {
+          @apply mt-4 w-44 sm:mt-11 md:w-auto;
+        }
+
+        h2 {
+          @apply w-60 sm:w-auto md:w-40;
+        }
+      }
+    }
+
+    .card78Container {
+      @apply flex flex-col gap-y-6 md:row-span-3 md:row-start-1;
+    }
+  }
+}
