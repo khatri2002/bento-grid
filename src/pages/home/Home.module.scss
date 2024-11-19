@@ -2,7 +2,12 @@
   @apply flex min-h-screen items-center justify-center bg-gray-200 py-8 sm:py-16;
 
   .container {
-    @apply grid w-[90vw] grid-cols-1 gap-6 md:grid-cols-4 xl:w-[66rem];
+    @apply grid grid-cols-1 gap-6 md:grid-cols-4;
+    width: 90vw;
+
+    @media (min-width: 1280px) {
+      width: 66rem;
+    }
 
     .card {
       @apply rounded-lg p-4 sm:p-5;
@@ -23,7 +28,11 @@
         @apply bg-purple-500 py-8 sm:py-10 md:col-span-2 md:col-start-2;
 
         h1 {
-          @apply mx-auto w-[19rem] text-center text-5xl font-medium text-white sm:w-auto lg:text-6xl;
+          @apply mx-auto text-center text-5xl font-medium text-white lg:text-6xl;
+          width: 19rem;
+          @media (min-width: 640px) {
+            width: auto;
+          }
 
           .active {
             @apply text-yellow-500;
@@ -46,7 +55,9 @@
         @apply relative flex flex-col overflow-hidden bg-white md:col-start-2 md:row-start-2 md:flex-row md:items-end;
 
         img {
-          @apply left-5 top-[1.5625rem] mx-auto w-[90%] origin-left sm:w-4/6 md:absolute md:w-auto md:scale-125;
+          @apply left-5 mx-auto origin-left sm:w-4/6 md:absolute md:w-auto md:scale-125;
+          top: 1.5625rem;
+          width: 90%;
         }
 
         h2 {
@@ -66,7 +77,10 @@
         @apply relative row-span-1 flex flex-col justify-between gap-y-6 overflow-hidden bg-purple-100 sm:gap-y-4 md:row-span-2 md:py-0;
 
         img {
-          @apply bottom-0 left-20 top-0 my-auto sm:mx-auto sm:w-64 md:absolute md:w-auto md:scale-[1.20];
+          @apply bottom-0 left-20 top-0 my-auto sm:mx-auto sm:w-64 md:absolute md:w-auto;
+          @media (min-width: 768px) {
+            transform: scale(1.2);
+          }
         }
 
         h2 {

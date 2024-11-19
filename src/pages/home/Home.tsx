@@ -1,4 +1,4 @@
-import styles from "./Home.module.css";
+import styles from "./Home.module.scss";
 import FiveStars from "../../assets/images/illustration-five-stars.webp";
 import MultiplePlatforms from "../../assets/images/illustration-multiple-platforms.png";
 import ConsistentSchedule from "../../assets/images/illustration-consistent-schedule.webp";
